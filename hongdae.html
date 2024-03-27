@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Book</title>
+    <link rel="shortcut icon" href="1images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="Seoul">
+    <div class="navbar">
+        <h3>by Jinho</h3>
+        <h3>13.12.2023-2.1.2024</h3>
+    </div>
+    <div class="title">
+        <h1>Our <span class="journey">Journey </span> in Seoul</h1>
+    </div>
+    <div class="hide"></div>
+    <div class="TrainBox">
+        <img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Body.png" alt="TrainBody" class="train"><img src="1images/Head.png" alt="TrainHead" class="train">
+        <div class="line"></div>
+        <div class="Stations">
+            <button onclick="window.location.href='arrival.html';">Arrival</button>
+            <button onclick="window.location.href='jamsil.html';">Jamsil</button>
+            <button onclick="window.location.href='gangnam.html';">Gangnam</button>
+            <button onclick="window.location.href='namsan.html';">Namsan</button>
+            <button class="active" onclick="window.location.href='hongdae.html';">Hongdae</button>
+            <button onclick="window.location.href='yeouido.html';">Yeouido</button>
+        </div>
+    </div>
+    <div class="ImgBox">
+        <h3 class="subhead">Boardgames & Thanks Nature Cafe: 18.12.2023</h3>
+        <p class="description">Lorem ipsum...</p>
+        <div class="Images">
+            <img src="1images/Solid_gray.png" alt="1" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="2" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="3" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="4" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="6" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="6" onclick="openLightbox('1images/Solid_gray.png')">
+        </div>
+    </div>
+    <div class="ImgBox">
+        <h3 class="subhead">Shopping & Pizza: 18.12.2023</h3>
+        <p class="description">Lorem ipsum...</p>
+        <div class="Images">
+            <img src="1images/Solid_gray.png" alt="1" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="2" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="3" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="4" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="6" onclick="openLightbox('1images/Solid_gray.png')">
+            <img src="1images/Solid_gray.png" alt="6" onclick="openLightbox('1images/Solid_gray.png')">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

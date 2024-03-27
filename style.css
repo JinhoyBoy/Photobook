@@ -1,0 +1,261 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+body
+{
+    font-family: inter;
+    margin: 0;
+}
+
+h1
+{
+    letter-spacing: -2px;
+    font-size: 40px;
+}
+
+h2
+{
+    letter-spacing: -2px;
+    font-size: 50px;
+}
+
+h5
+{
+    text-align: center;
+}
+
+img
+{
+    width: 28vw;
+    height: 21vw;
+    margin-top: 5vh;
+    border-radius: 1rem;
+    transition:transform 0.25s ease;
+    object-fit: cover;
+}
+
+.ImgBox img:hover {
+    -webkit-transform:scale(1.2); /* or some other value */
+    transform:scale(1.2);
+    align-self: center;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: large;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+button
+{
+    text-decoration: none;
+    height: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 950px) {
+    /* For mobile phones: */
+    button
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+        font-size: smaller;
+    }
+  }
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.journey
+{
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    white-space: pre;
+}
+
+.TrainBox
+{
+    height: auto;
+    width: auto;
+    border: 5px;
+    border-style: none;
+    border-radius: 1rem;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 3vh;
+    background-color: white;
+}
+
+.Stations
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
+}
+
+.ImgBox
+{
+    height: auto;
+    width: auto;
+    border: 5px;
+    border-style: none;
+    border-radius: 1rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 5vh;
+    background-color: white;
+}
+
+.subhead
+{
+    text-align: center;
+    font-size: x-large;
+    padding-top: 3vh;
+}
+
+.description
+{
+    text-align: center;
+}
+
+.Images
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+.train
+{
+    width: 5vw;
+    height: auto;
+    border-radius: 0%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.line
+{
+    border: 2px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 2rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 1vh;
+    margin-top: -1vh;
+}
+
+.active
+{
+    background-color: lightgreen;
+}
+.deactive
+{
+    background-color: rgb(153, 153, 153);
+}
+
+.intro
+{
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.Airplane
+{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-top: -20vh;
+    margin-bottom: -10vh;
+}
+
+.airplane
+{
+    height: auto;
+    width: 50vw;
+}
+
+.Seoul
+{
+    background-color: rgb(203, 233, 253);
+}
+
+.hide
+{
+    position: absolute;
+    background-color: rgb(203, 233, 253);
+    height: 24vh;
+    width: 3vw;
+    z-index: 1;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    overflow: auto;
+}
+
+.lightbox img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.close-btn {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
